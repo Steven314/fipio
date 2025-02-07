@@ -37,6 +37,13 @@ pak::pkg_install("program--/fipio")
 remotes::install_github("program--/fipio")
 ```
 
+> [!NOTE]
+> Install this fork with this:
+> ```r
+> remotes::install_github("Steven314/fipio")
+> ```
+> My change was very small, but allows `as_fips` to be used when `NA`s are present.
+
 ## Usage
 
 `fipio` makes it easy to get information about a US FIPS code. Let’s

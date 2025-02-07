@@ -13,7 +13,7 @@
 #'
 #' @export
 as_fips <- function(state, county = NULL) {
-    if (missing(state) | any(state == "") | is.null(state)) {
+    if (missing(state) | any(state == "" & !is.na(state)) | is.null(state)) {
         stop("`state` must be specified at least.", call. = FALSE)
     }
 
